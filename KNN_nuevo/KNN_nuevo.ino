@@ -85,6 +85,8 @@ void loop() {
       Serial.print("ES DE TIPO -> ");
       Serial.println(int(dist_menores[1][j]));
       break;
+    } else {
+      win = 0; //Sino solo se resetea y se vuelve a buscar
     }
   }
   delay(50000); //Para que el programa se ejecute prácticamente 1 sola vez
